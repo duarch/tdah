@@ -1,2 +1,2 @@
 # tdah
-Teste simples para saber se você tem TDAH
+Simple test to diagnose TDAH
