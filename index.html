@@ -9,19 +9,56 @@
 </head>
 <body>
     <header>
-<h1 id="title">Teste TDAH</h1>
+<h1 id="title">Teste TDAH para Adultos</h1>
 <p id="description">Um teste simples pra saber se você tem TDAH</p>
     </header>
     <section>
 <div>
     <form id="survey-form" action="">
-        Nome <input id="name" type="text" value="Meu Nome"> <br>
-        e-mail <input id="email" type="email"> <br> <!-- Check validation -->
-        Idade <input id="number" type="number" min="1" max="150" > <br> <!-- Check validation -->
-        <!-- missing story #10 and #11 -->
-        Drop <!-- stop here -->
-        <p>teste do fzf mas não deu certo</p>
-        <h2>Teste git andre 3/7/2020 </h2>
+      <label id="name-label" for="name">Name</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Seu nome"  required  />
+      <br>
+      <br>
+<label id="email-label" for="email">e-mail</label>
+      <input
+        type="email"
+        id="email"
+        class="form-control"
+        placeholder="seu_email@mail.com"
+        required
+      />
+      <br>
+      <br>
+
+<label id="number-label" for="idade">Idade</label>
+<input id="number" name="idade" type="number" min="1" max="150" placeholder="Seu nome"      required  /> <br>
+<br>
+        Escolha a melhor opção de envio 
+        <br><br>
+        <label for="envio">Escolha:</label>
+  <select id="dropdown" name="sendoptions">
+    <option value="email">e-mail</option>
+    <option value="zap">WhatsApp</option>
+    <option value="sms">SMS</option>
+    <option value="pdf">pdf</option>
+  </select> 
+  <hr>         
+  <h2>Question 1</h2>
+
+  <p>How often do you have trouble wrapping up the final details of a project, once the challenging parts have been done?</p>
+  <input type="radio" id="never" name="answer1" value="never">
+  <label for="never">Never</label><br>
+  <input type="radio" id="rarely" name="answer1" value="rarely">
+  <label for="rarely">Rarely</label><br>
+  <input type="radio" id="sometimes" name="answer1" value="sometimes">
+  <label for="sometimes">Sometimes</label><br>
+  <input type="radio" id="often" name="answer1" value="often">
+  <label for="often">Often</label><br>
+  <input type="radio" id="veryoften" name="answer1" value="veryoften">
+  <label for="veryoften">Very Often</label><br>
+  
+  <!--parei na storie 14-->
+
 
     </form>
 </div>
