@@ -1,135 +1,150 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="estilo.css">
-</head>
-<body>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
     <header>
-<h1 id="title">Teste TDAH para Adultos</h1>
-<p id="description">Um teste simples pra saber se você tem TDAH</p>
+      <h1 id="title">Teste TDAH para Adultos</h1>
+      <p id="description">Um teste simples pra saber se você tem TDAH</p>
     </header>
     <section>
-<div>
-    <form id="survey-form" action="">
-      <label id="name-label" for="name">Name</label>
-      <input type="text" name="name" id="name" class="form-control" placeholder="Seu nome"  required  />
-      <br>
-      <br>
-<label id="email-label" for="email">e-mail</label>
-      <input
-        type="email"
-        id="email"
-        class="form-control"
-        placeholder="seu_email@mail.com"
-        required
-      />
-      <br>
-      <br>
+      <div>
+        <form id="survey-form" action="">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Seu nome"
+            required
+          />
+          <br />
+          <br />
+          <label id="email-label" for="email">e-mail</label>
+          <input
+            type="email"
+            id="email"
+            class="form-control"
+            placeholder="seu_email@mail.com"
+            required
+          />
+          <br />
+          <br />
 
-<label id="number-label" for="idade">Idade</label>
-<input id="number" name="idade" type="number" min="1" max="150" placeholder="Seu nome"      required  /> <br>
-<br>
-        Escolha a melhor opção de envio 
-        <br><br>
-        <label for="envio">Escolha:</label>
-  <select id="dropdown" name="sendoptions">
-    <option value="email">e-mail</option>
-    <option value="zap">WhatsApp</option>
-    <option value="sms">SMS</option>
-    <option value="pdf">pdf</option>
-  </select> 
-  <hr>         
-  <h2>Question 1</h2>
+          <label id="number-label" for="idade">Idade</label>
+          <input
+            id="number"
+            name="idade"
+            type="number"
+            min="1"
+            max="150"
+            placeholder="Seu nome"
+            required
+          />
+          <br />
+          <br />
+          Escolha a melhor opção de envio
+          <br /><br />
+          <label for="envio">Escolha:</label>
+          <select id="dropdown" name="sendoptions">
+            <option value="email">e-mail</option>
+            <option value="zap">WhatsApp</option>
+            <option value="sms">SMS</option>
+            <option value="pdf">pdf</option>
+          </select>
+          <hr />
+          <h2>Question 1</h2>
 
-  <p>How often do you have trouble wrapping up the final details of a project, once the challenging parts have been done?</p>
-  <input type="radio" id="never" name="answer1" value="never">
-  <label for="never">Never</label><br>
-  <input type="radio" id="rarely" name="answer1" value="rarely">
-  <label for="rarely">Rarely</label><br>
-  <input type="radio" id="sometimes" name="answer1" value="sometimes">
-  <label for="sometimes">Sometimes</label><br>
-  <input type="radio" id="often" name="answer1" value="often">
-  <label for="often">Often</label><br>
-  <input type="radio" id="veryoften" name="answer1" value="veryoften">
-  <label for="veryoften">Very Often</label><br>
-  
-<div class="form-group">
-      <p>
-        How often do you have difficulty getting things in order when you have to do
-a task that requires organization?
-      <span class="clue"></span>
-      </p>
+          <p>
+            How often do you have trouble wrapping up the final details of a
+            project, once the challenging parts have been done?
+          </p>
+          <input type="radio" id="never" name="answer1" value="never" />
+          <label for="never">Never</label><br />
+          <input type="radio" id="rarely" name="answer1" value="rarely" />
+          <label for="rarely">Rarely</label><br />
+          <input type="radio" id="sometimes" name="answer1" value="sometimes" />
+          <label for="sometimes">Sometimes</label><br />
+          <input type="radio" id="often" name="answer1" value="often" />
+          <label for="often">Often</label><br />
+          <input type="radio" id="veryoften" name="answer1" value="veryoften" />
+          <label for="veryoften">Very Often</label><br />
 
-      <label
-        ><input
-          name="prefer"
-          value="never"
-          type="checkbox"
-          class="input-checkbox"
-        />Never</label
-      >
-      <label>
-        <input
-          name="prefer"
-          value="rarely"
-          type="checkbox"
-          class="input-checkbox"
-        />Rarely</label
-      >
-      <label
-        ><input
-          name="prefer"
-          value="sometimes"
-          type="checkbox"
-          class="input-checkbox"
-        />Sometimes</label
-      >
-      <label
-        ><input
-          name="prefer"
-          value="often"
-          type="checkbox"
-          class="input-checkbox"
-        />Often</label
-      >
-      <label
-        ><input
-          name="prefer"
-          value="veryoften"
-          type="checkbox"
-          class="input-checkbox"
-        />Very Often</label
-   </div>
+          <div class="form-group">
+            <p>
+              How often do you have difficulty getting things in order when you
+              have to do a task that requires organization?
+              <span class="clue"></span>
+            </p>
 
-<div class="form-group">
-      <p>Please describe how do you identify yourself as TDAH person</p>
-      <textarea
-        id="description"
-        class="input-textarea"
-        name="comment"
-        placeholder="Your description here..."
-      ></textarea>
-    </div>
-<div class="form-group">
-      <button type="submit" id="submit" class="submit-button">
-        Submit
-      </button>
-    </div>
+            <label
+              ><input
+                name="prefer"
+                value="never"
+                type="checkbox"
+                class="input-checkbox"
+              />Never</label
+            >
+            <label>
+              <input
+                name="prefer"
+                value="rarely"
+                type="checkbox"
+                class="input-checkbox"
+              />Rarely</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="sometimes"
+                type="checkbox"
+                class="input-checkbox"
+              />Sometimes</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="often"
+                type="checkbox"
+                class="input-checkbox"
+              />Often</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="veryoften"
+                type="checkbox"
+                class="input-checkbox"
+              />Very Often</label
+            >
+          </div>
 
-    </form>
-</div>
-<div>
-
-</div>
+          <div class="form-group">
+            <p>Please describe how do you identify yourself as TDAH person</p>
+            <textarea
+              id="description"
+              class="input-textarea"
+              name="comment"
+              placeholder="Your description here..."
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+      <div></div>
     </section>
-    <footer>
-
-    </footer>
+    <footer></footer>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
